@@ -96,7 +96,7 @@ Respond naturally in Spanish, correcting errors gently and explaining if needed.
     const response = await fetch("http://localhost:11434/api/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ model: "mistral", prompt }),
+      body: JSON.stringify({ model: "qwen2.5:1.5b", prompt }),
     });
 
     const text = await response.text(); // capturamos todo como texto
